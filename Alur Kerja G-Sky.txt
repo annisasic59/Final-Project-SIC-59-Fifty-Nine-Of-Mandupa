@@ -1,0 +1,17 @@
+1. Masukkan G-Sky dalam mode aktif pada ubidots agar nantinya g sky bisa bekerja
+
+2. Pastikan bahwa Raspberry Pi, perangkat utama G-Sky, sudah terhubung dengan internet dan perangkat kerasnya, termasuk sensor asap MQ2, buzzer, dan kamera, telah terpasang dengan benar. 
+
+3. Buka file program Python yang mengatur alur kerja G-Sky.  File ini berisi kode untuk memantau sensor asap MQ2 kita nandi , serta mengaktifkan buzzer,  mengambil gambar dengan kamera, dan mengirim pesan ke Telegram pengguna
+
+4. Jalankan program Python g sky dengan mengklik tombol "Run" atau gambar pesawat kertas. Program ini akan mulai berjalan dan memantau sensor asap.
+
+5.  Program akan terus memantau sensor asap MQ2. Jika sensor mendeteksi asap atau gas/bau berbahaya, program akan mengambil tindakan yang sesuai.
+
+6. Jika asap terdeteksi, program akan mengaktifkan buzzer sebagai peringatan. Buzzer ini akan berbunyi secara lantang sebagai tanda bahaya.
+
+7. Program juga akan memerintahkan kamera untuk mengambil gambar. Gambar ini akan merekam situasi saat asap terdeteksi.
+
+8. Selanjutnya, program akan mengirimkan pesan melalui layanan Telegram. Pesan ini akan berisi foto yang diambil oleh kamera, informasi waktu terjadinya deteksi asap, dan peringatan.
+
+9.  Pengguna akan menerima pesan Telegram dari G-Sky yang memberikan informasi visual tentang situasi serta peringatan. Dengan informasi ini, pengguna dapat mengambil tindakan yang sesuai
